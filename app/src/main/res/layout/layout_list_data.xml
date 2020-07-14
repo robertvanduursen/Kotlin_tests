@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="#fff"
+        android:gravity="center_vertical">
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_weight="1"/>
+
+    <TextView
+            android:id="@+id/data_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_weight="9" android:text="test"/>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_weight="1"/>
+
+    <TextView
+            android:id="@+id/data_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_weight="29" />
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_weight="1"    />
+
+    <TextView
+            android:id="@+id/people_lname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_weight="29" />
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_weight="1"    />
+
+    <TextView
+            android:id="@+id/people_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_weight="29" />
+
+
+</LinearLayout>

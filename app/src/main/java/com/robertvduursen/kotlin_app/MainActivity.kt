@@ -1,15 +1,10 @@
 package com.robertvduursen.kotlin_app
 
-
-import android.content.Intent
-
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
+import android.content.Intent
 import androidx.fragment.app.FragmentPagerAdapter
-import androidx.viewpager.widget.ViewPager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -22,14 +17,6 @@ import kotlinx.android.synthetic.main.fragment_main.view.*
 
 class MainActivity : AppCompatActivity() {
 
-    /**
-     * The [android.support.v4.view.PagerAdapter] that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * [android.support.v4.app.FragmentStatePagerAdapter].
-     */
     private var mSectionsPagerAdapter: SectionsPagerAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,6 +36,12 @@ class MainActivity : AppCompatActivity() {
         }
         btnWatchDoingActivity.setOnClickListener {
             startActivity(Intent(this, whatAreYouDoingActivity::class.java))
+        }
+        btnWhereAreYouActivity.setOnClickListener {
+            startActivity(Intent(this, whereAreYouActivity::class.java))
+        }
+        btnHowDoYouFeelgActivity.setOnClickListener {
+            startActivity(Intent(this, howDoYouFeelActivity::class.java))
         }
 
 
@@ -87,7 +80,8 @@ class MainActivity : AppCompatActivity() {
      * A [FragmentPagerAdapter] that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
-    inner class SectionsPagerAdapter(fm: androidx.fragment.app.FragmentManager) : androidx.fragment.app.FragmentPagerAdapter(fm) {
+    inner class SectionsPagerAdapter(fm: androidx.fragment.app.FragmentManager) :
+        androidx.fragment.app.FragmentPagerAdapter(fm) {
 
         override fun getItem(position: Int): androidx.fragment.app.Fragment {
             // getItem is called to instantiate the fragment for the given page.

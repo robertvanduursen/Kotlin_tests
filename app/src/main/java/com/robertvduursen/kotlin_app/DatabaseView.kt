@@ -57,7 +57,7 @@ class DatabaseView : AppCompatActivity() {
     }
 
     private fun clearfields(){
-        et_id.setText("")
+//        et_id.setText("")
         et_fname.setText("")
     }
 

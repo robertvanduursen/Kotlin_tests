@@ -9,6 +9,7 @@ object DBcontract {
             val TABLE_NAME = "table_two"
             val COLUMN_ID = "id"
             val COLUMN_FNAME = "fname"
+            val COLUMN_FDATE = "fdate"
         }
 
 

@@ -7,8 +7,13 @@
         android:layout_height="match_parent"
         tools:context=".howDoYouFeelActivity">
 
+    <Button
+            android:text="Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btn_home_screen3" tools:layout_editor_absoluteY="85dp"
+            tools:layout_editor_absoluteX="16dp"/>
     <TextView
-            android:text="What Are You Doing?"
+            android:text="How Do You Feel?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/head_whatAreYouDoing3"
             android:textAlignment="center"/>
